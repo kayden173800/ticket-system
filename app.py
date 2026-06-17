@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import sqlite3
 from database import init_db
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 init_db()
 
 
